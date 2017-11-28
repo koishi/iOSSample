@@ -28,6 +28,7 @@ class ViewController: UIViewController {
 
         pageControll.numberOfPages = pageImages.count
         pageControll.currentPage = 0
+        pageControll.isUserInteractionEnabled = false
 
         for p in 1...pageImages.count {
             let button = UIButton(frame: CGRect(x: view.bounds.width * CGFloat(p-1), y: 0, width: view.bounds.width, height: scrollView.bounds.height))

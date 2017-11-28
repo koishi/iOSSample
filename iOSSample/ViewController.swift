@@ -32,8 +32,14 @@ class ViewController: UIViewController {
         for p in 1...pageImages.count {
             let button = UIButton(frame: CGRect(x: view.bounds.width * CGFloat(p-1), y: 0, width: view.bounds.width, height: scrollView.bounds.height))
             button.sd_setImage(with: URL.init(string: pageImages[p]!)!, for: .normal, completed: nil)
+            button.adjustsImageWhenHighlighted = false
             self.scrollView.addSubview(button)
+            button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         }
+    }
+
+    @objc func tappedButton(sender: UIButton) {
+        print(pageControll.currentPage)
     }
 }
 

@@ -28,11 +28,14 @@ class ViewController: UIViewController {
 
         pageControll.numberOfPages = pageImages.count
         pageControll.currentPage = 0
+        pageControll.isUserInteractionEnabled = false
 
         for p in 1...pageImages.count {
-            let button = UIButton(frame: CGRect(x: view.bounds.width * CGFloat(p-1), y: 0, width: view.bounds.width, height: scrollView.bounds.height))
-            button.sd_setImage(with: URL.init(string: pageImages[p]!)!, for: .normal, completed: nil)
-            self.scrollView.addSubview(button)
+            let frame = CGRect(x: view.bounds.width * CGFloat(p-1), y: 0, width: view.bounds.width, height: scrollView.bounds.height)
+            let url = URL.init(string: pageImages[p]!)
+            let image = UIImageView(frame: frame)
+            image.sd_setImage(with: url, completed: nil)
+            self.scrollView.addSubview(image)
         }
     }
 }

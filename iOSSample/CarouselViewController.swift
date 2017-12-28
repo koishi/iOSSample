@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ViewController: UIViewController {
+class CarouselViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControll: UIPageControl!
@@ -31,16 +31,20 @@ class ViewController: UIViewController {
         pageControll.isUserInteractionEnabled = false
 
         for p in 1...pageImages.count {
-            let frame = CGRect(x: view.bounds.width * CGFloat(p-1), y: 0, width: view.bounds.width, height: scrollView.bounds.height)
-            let url = URL.init(string: pageImages[p]!)
-            let image = UIImageView(frame: frame)
-            image.sd_setImage(with: url, completed: nil)
-            self.scrollView.addSubview(image)
+            let button = UIButton(frame: CGRect(x: view.bounds.width * CGFloat(p-1), y: 0, width: view.bounds.width, height: scrollView.bounds.height))
+            button.sd_setImage(with: URL.init(string: pageImages[p]!)!, for: .normal, completed: nil)
+            button.adjustsImageWhenHighlighted = false
+            self.scrollView.addSubview(button)
+            button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         }
+    }
+
+    @objc func tappedButton(sender: UIButton) {
+        print(pageControll.currentPage)
     }
 }
 
-extension ViewController: UIScrollViewDelegate {
+extension CarouselViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageProgress = Double(scrollView.contentOffset.x / scrollView.bounds.width)
         pageControll.currentPage = Int(round(pageProgress))

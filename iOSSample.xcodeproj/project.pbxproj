@@ -13,6 +13,9 @@
 		FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA149CBE1FCD3ED800E82F5F /* Main.storyboard */; };
 		FA149CC21FCD3ED800E82F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA149CC11FCD3ED800E82F5F /* Assets.xcassets */; };
 		FA149CC51FCD3ED800E82F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA149CC31FCD3ED800E82F5F /* LaunchScreen.storyboard */; };
+		FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */; };
+		FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406DD91FF4AD680005620B /* DrawRectViewController.swift */; };
+		FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406DDB1FF4BBDA0005620B /* Images.xcassets */; };
 		FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */; };
 		FA964F471FD53AA3001FCB7E /* CarouselView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */; };
 		FAC5766C1FD53EA50032C49D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC5766B1FD53EA50032C49D /* Storyboard.storyboard */; };
@@ -28,6 +31,9 @@
 		FA149CC11FCD3ED800E82F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA149CC41FCD3ED800E82F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA149CC61FCD3ED800E82F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawRectView.storyboard; sourceTree = "<group>"; };
+		FA406DD91FF4AD680005620B /* DrawRectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectViewController.swift; sourceTree = "<group>"; };
+		FA406DDB1FF4BBDA0005620B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarouselView.storyboard; sourceTree = "<group>"; };
 		FAC5766B1FD53EA50032C49D /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 			children = (
 				FA406DD31FF4AB9F0005620B /* Common */,
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
+				FA406DD61FF4ACF60005620B /* DrawRectView */,
 				FA406DD41FF4ABC50005620B /* Dummy */,
 				FA406DD51FF4ABE20005620B /* Resources */,
 				FA149CC61FCD3ED800E82F5F /* Info.plist */,
@@ -125,8 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				FA149CC11FCD3ED800E82F5F /* Assets.xcassets */,
+				FA406DDB1FF4BBDA0005620B /* Images.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA406DD61FF4ACF60005620B /* DrawRectView */ = {
+			isa = PBXGroup;
+			children = (
+				FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */,
+				FA406DD91FF4AD680005620B /* DrawRectViewController.swift */,
+			);
+			path = DrawRectView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +210,11 @@
 			files = (
 				FA964F471FD53AA3001FCB7E /* CarouselView.storyboard in Resources */,
 				FA149CC51FCD3ED800E82F5F /* LaunchScreen.storyboard in Resources */,
+				FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */,
 				FA149CC21FCD3ED800E82F5F /* Assets.xcassets in Resources */,
 				FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */,
 				FAC5766C1FD53EA50032C49D /* Storyboard.storyboard in Resources */,
+				FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +281,7 @@
 			files = (
 				FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */,
 				FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */,
+				FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */,
 				FA149CBB1FCD3ED800E82F5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

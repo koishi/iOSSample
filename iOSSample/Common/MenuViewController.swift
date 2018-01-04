@@ -13,7 +13,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     let samples: [(sampleName: String, viewController: String)] = [("CarouselView","CarouselView"),
-                                                                   ("Storyboard","Storyboard")]
+                                                                   ("DrawRectView","DrawRectView")]
     let cellIdentifier = "cell"
 
     override func viewDidLoad() {

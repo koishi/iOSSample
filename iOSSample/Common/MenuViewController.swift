@@ -12,9 +12,10 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    let samples: [(sampleName: String, viewController: String)] = [("CarouselView","CarouselView"),
+    let samples: [(sampleName: String, storyboard: String)] = [("CarouselView","CarouselView"),
                                                                    ("DrawRectView","DrawRectView"),
-                                                                   ("CustomViewController","CustomViewController")]
+                                                                   ("CustomViewController","CustomViewController"),
+                                                                   ("PickerView","PickerView")]
     let cellIdentifier = "cell"
 
     override func viewDidLoad() {
@@ -40,7 +41,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sample = samples[indexPath.row]
-        let storyboard = UIStoryboard(name: sample.viewController, bundle: nil)
+        let storyboard = UIStoryboard(name: sample.storyboard, bundle: nil)
         if let viewController = storyboard.instantiateInitialViewController() {
             navigationController?.pushViewController(viewController, animated: true)
         }

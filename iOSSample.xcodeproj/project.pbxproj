@@ -11,6 +11,10 @@
 		8207BD241FF76C5100EC2FD8 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207BD231FF76C5100EC2FD8 /* CustomCollectionView.swift */; };
 		8207BD261FF76C5E00EC2FD8 /* CustomCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8207BD251FF76C5E00EC2FD8 /* CustomCollectionView.xib */; };
 		821FA4FF1FFE7399004732FA /* CustomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821FA4FE1FFE7399004732FA /* CustomViewController.storyboard */; };
+		825455131FFE822F003D108D /* PickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825455121FFE822F003D108D /* PickerView.storyboard */; };
+		829794792000484400EF5968 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829794782000484400EF5968 /* PickerViewController.swift */; };
+		8297947B2000505000EF5968 /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8297947A2000505000EF5968 /* PickerViewController.storyboard */; };
+		82C978E21FFFC10200F63ADE /* PickerViewBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C978E11FFFC10200F63ADE /* PickerViewBaseController.swift */; };
 		FA149CBB1FCD3ED800E82F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA149CBA1FCD3ED800E82F5F /* AppDelegate.swift */; };
 		FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA149CBC1FCD3ED800E82F5F /* MenuViewController.swift */; };
 		FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA149CBE1FCD3ED800E82F5F /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 		8207BD231FF76C5100EC2FD8 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		8207BD251FF76C5E00EC2FD8 /* CustomCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionView.xib; sourceTree = "<group>"; };
 		821FA4FE1FFE7399004732FA /* CustomViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomViewController.storyboard; sourceTree = "<group>"; };
+		825455121FFE822F003D108D /* PickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerView.storyboard; sourceTree = "<group>"; };
+		829794782000484400EF5968 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		8297947A2000505000EF5968 /* PickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
+		82C978E11FFFC10200F63ADE /* PickerViewBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewBaseController.swift; sourceTree = "<group>"; };
 		FA149CB71FCD3ED800E82F5F /* iOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA149CBA1FCD3ED800E82F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA149CBC1FCD3ED800E82F5F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,17 @@
 			path = CustomViewXib;
 			sourceTree = "<group>";
 		};
+		825455111FFE820D003D108D /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				825455121FFE822F003D108D /* PickerView.storyboard */,
+				82C978E11FFFC10200F63ADE /* PickerViewBaseController.swift */,
+				8297947A2000505000EF5968 /* PickerViewController.storyboard */,
+				829794782000484400EF5968 /* PickerViewController.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
 		FA149CAE1FCD3ED800E82F5F = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +127,7 @@
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
 				FA406DD61FF4ACF60005620B /* DrawRectView */,
 				821FA4FD1FFE7369004732FA /* CustomViewXib */,
+				825455111FFE820D003D108D /* PickerView */,
 				FA406DD51FF4ABE20005620B /* Resources */,
 				FA149CC61FCD3ED800E82F5F /* Info.plist */,
 			);
@@ -221,7 +241,9 @@
 				FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */,
 				FA149CC21FCD3ED800E82F5F /* Assets.xcassets in Resources */,
 				FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */,
+				825455131FFE822F003D108D /* PickerView.storyboard in Resources */,
 				FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */,
+				8297947B2000505000EF5968 /* PickerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C978E21FFFC10200F63ADE /* PickerViewBaseController.swift in Sources */,
 				8207BD241FF76C5100EC2FD8 /* CustomCollectionView.swift in Sources */,
 				FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */,
 				FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */,
 				FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */,
+				829794792000484400EF5968 /* PickerViewController.swift in Sources */,
 				FA149CBB1FCD3ED800E82F5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

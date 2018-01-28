@@ -13,9 +13,10 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     let samples: [(sampleName: String, storyboard: String)] = [("CarouselView","CarouselView"),
-                                                                   ("DrawRectView","DrawRectView"),
-                                                                   ("CustomViewController","CustomViewController"),
-                                                                   ("PickerView","PickerView")]
+                                                               ("DrawRectView","DrawRectView"),
+                                                               ("CustomViewController","CustomViewController"),
+                                                               ("PickerView","PickerView"),
+                                                               ("InfinityScroolView","InfinityScroolView")]
     let cellIdentifier = "cell"
 
     override func viewDidLoad() {

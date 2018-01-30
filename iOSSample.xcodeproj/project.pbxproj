@@ -28,6 +28,8 @@
 		FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406DDB1FF4BBDA0005620B /* Images.xcassets */; };
 		FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */; };
 		FA964F471FD53AA3001FCB7E /* CarouselView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */; };
+		FAADD25220208754009DE882 /* ContentSizeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAADD25120208754009DE882 /* ContentSizeView.storyboard */; };
+		FAADD2542020876A009DE882 /* ContentSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADD2532020876A009DE882 /* ContentSizeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		FA406DDB1FF4BBDA0005620B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarouselView.storyboard; sourceTree = "<group>"; };
+		FAADD25120208754009DE882 /* ContentSizeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentSizeView.storyboard; sourceTree = "<group>"; };
+		FAADD2532020876A009DE882 /* ContentSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizeViewController.swift; sourceTree = "<group>"; };
 		FF673239809A6BE3D4FB6E51 /* Pods-iOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSSample/Pods-iOSSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +143,7 @@
 		FA149CB91FCD3ED800E82F5F /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				FAADD2502020873F009DE882 /* ContentSize */,
 				FA406DD31FF4AB9F0005620B /* Common */,
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
 				FA406DD61FF4ACF60005620B /* DrawRectView */,
@@ -187,6 +192,15 @@
 				FA406DD91FF4AD680005620B /* DrawRectViewController.swift */,
 			);
 			path = DrawRectView;
+			sourceTree = "<group>";
+		};
+		FAADD2502020873F009DE882 /* ContentSize */ = {
+			isa = PBXGroup;
+			children = (
+				FAADD25120208754009DE882 /* ContentSizeView.storyboard */,
+				FAADD2532020876A009DE882 /* ContentSizeViewController.swift */,
+			);
+			path = ContentSize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 				FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */,
 				820A9E12201D91C100574CF0 /* InfinityScroolView.storyboard in Resources */,
 				FA149CC21FCD3ED800E82F5F /* Assets.xcassets in Resources */,
+				FAADD25220208754009DE882 /* ContentSizeView.storyboard in Resources */,
 				FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */,
 				825455131FFE822F003D108D /* PickerView.storyboard in Resources */,
 				FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */,
@@ -333,6 +348,7 @@
 				FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */,
 				FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */,
 				829794792000484400EF5968 /* PickerViewController.swift in Sources */,
+				FAADD2542020876A009DE882 /* ContentSizeViewController.swift in Sources */,
 				820A9E17201D91D700574CF0 /* CustomCell.swift in Sources */,
 				FA149CBB1FCD3ED800E82F5F /* AppDelegate.swift in Sources */,
 			);

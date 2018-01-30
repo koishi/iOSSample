@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJM-e2-R4D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Content Size View Controller-->
+        <scene sceneID="Pa2-cm-4oU">
+            <objects>
+                <viewController storyboardIdentifier="ContentSizeViewController" id="dJM-e2-R4D" customClass="ContentSizeViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dU4-hF-xqT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Eg-HH-T2b">
+                                <rect key="frame" x="0.0" y="233" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Zxn-m5-xGq"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRv-Go-nHW">
+                                <rect key="frame" x="164" y="445" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="dJM-e2-R4D" eventType="touchUpInside" id="Szf-5I-Kp7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Eg-HH-T2b" firstAttribute="centerY" secondItem="dU4-hF-xqT" secondAttribute="centerY" id="3tD-Fg-fOw"/>
+                            <constraint firstItem="1Eg-HH-T2b" firstAttribute="leading" secondItem="aFU-ad-iFD" secondAttribute="leading" id="ANj-Y5-lxe"/>
+                            <constraint firstItem="1Eg-HH-T2b" firstAttribute="centerX" secondItem="dU4-hF-xqT" secondAttribute="centerX" id="N4t-AY-SwJ"/>
+                            <constraint firstItem="aFU-ad-iFD" firstAttribute="trailing" secondItem="1Eg-HH-T2b" secondAttribute="trailing" id="XZi-2v-xmA"/>
+                            <constraint firstItem="ZRv-Go-nHW" firstAttribute="top" secondItem="1Eg-HH-T2b" secondAttribute="bottom" constant="12" id="mUY-dy-qTz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aFU-ad-iFD"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1Eg-HH-T2b" id="V4m-ZR-e29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vy9-po-scx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="-24"/>
+        </scene>
+    </scenes>
+</document>

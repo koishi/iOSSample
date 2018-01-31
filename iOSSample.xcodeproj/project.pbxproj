@@ -143,10 +143,10 @@
 		FA149CB91FCD3ED800E82F5F /* iOSSample */ = {
 			isa = PBXGroup;
 			children = (
-				FAADD2502020873F009DE882 /* ContentSize */,
 				FA406DD31FF4AB9F0005620B /* Common */,
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
 				FA406DD61FF4ACF60005620B /* DrawRectView */,
+				FAADD2502020873F009DE882 /* ContentSize */,
 				821FA4FD1FFE7369004732FA /* CustomViewXib */,
 				820A9E10201D8EB200574CF0 /* InfinityScroolView */,
 				825455111FFE820D003D108D /* PickerView */,

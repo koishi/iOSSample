@@ -15,17 +15,20 @@ class ContentSizeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-//        tableView.delegate = self
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
-    @IBAction func tappedButton(_ sender: Any) {
-
+    @IBAction func tappedSetContentButton(_ sender: Any) {
         let contentSizeHeight = tableView.contentSize.height
         let sizeHeight = tableView.frame.size.height
         print("contentSizeHeight:\(contentSizeHeight)-sizeHeight:\(sizeHeight)")
         tableView.setContentOffset(CGPoint(x: 0, y: contentSizeHeight - sizeHeight), animated: true)
+    }
 
+    @IBAction func tappedScrollButton(_ sender: Any) {
+        let indexPath = IndexPath(row: 19, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
 
 }
@@ -46,6 +49,10 @@ extension  ContentSizeViewController: UITableViewDataSource {
 
 extension  ContentSizeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 30
+        return 100
+    }
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }

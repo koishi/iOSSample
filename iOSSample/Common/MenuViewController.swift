@@ -17,7 +17,8 @@ class MenuViewController: UIViewController {
                                                                ("CustomViewController","CustomViewController"),
                                                                ("PickerView","PickerView"),
                                                                ("InfinityScroolView","InfinityScroolView"),
-                                                               ("ContentSizeView","ContentSizeView")]
+                                                               ("ContentSizeView","ContentSizeView"),
+                                                               ("ShowKeyboard","ShowKeyboard")]
     let cellIdentifier = "cell"
 
     override func viewDidLoad() {

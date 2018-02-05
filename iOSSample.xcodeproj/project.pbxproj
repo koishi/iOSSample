@@ -26,6 +26,8 @@
 		FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */; };
 		FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406DD91FF4AD680005620B /* DrawRectViewController.swift */; };
 		FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406DDB1FF4BBDA0005620B /* Images.xcassets */; };
+		FA8591102027FAB2003C3A18 /* ShowKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */; };
+		FA8591122027FABB003C3A18 /* ShowKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */; };
 		FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */; };
 		FA964F471FD53AA3001FCB7E /* CarouselView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */; };
 		FAADD25220208754009DE882 /* ContentSizeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAADD25120208754009DE882 /* ContentSizeView.storyboard */; };
@@ -55,6 +57,8 @@
 		FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawRectView.storyboard; sourceTree = "<group>"; };
 		FA406DD91FF4AD680005620B /* DrawRectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectViewController.swift; sourceTree = "<group>"; };
 		FA406DDB1FF4BBDA0005620B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowKeyboard.storyboard; sourceTree = "<group>"; };
+		FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKeyboardViewController.swift; sourceTree = "<group>"; };
 		FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarouselView.storyboard; sourceTree = "<group>"; };
 		FAADD25120208754009DE882 /* ContentSizeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentSizeView.storyboard; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				821FA4FD1FFE7369004732FA /* CustomViewXib */,
 				820A9E10201D8EB200574CF0 /* InfinityScroolView */,
 				825455111FFE820D003D108D /* PickerView */,
+				FA85910E2027FA90003C3A18 /* ShowKeyboardView */,
 				FA406DD51FF4ABE20005620B /* Resources */,
 				FA149CC61FCD3ED800E82F5F /* Info.plist */,
 			);
@@ -192,6 +197,15 @@
 				FA406DD91FF4AD680005620B /* DrawRectViewController.swift */,
 			);
 			path = DrawRectView;
+			sourceTree = "<group>";
+		};
+		FA85910E2027FA90003C3A18 /* ShowKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */,
+				FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */,
+			);
+			path = ShowKeyboardView;
 			sourceTree = "<group>";
 		};
 		FAADD2502020873F009DE882 /* ContentSize */ = {
@@ -272,6 +286,7 @@
 				FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */,
 				820A9E12201D91C100574CF0 /* InfinityScroolView.storyboard in Resources */,
 				FA149CC21FCD3ED800E82F5F /* Assets.xcassets in Resources */,
+				FA8591102027FAB2003C3A18 /* ShowKeyboard.storyboard in Resources */,
 				FAADD25220208754009DE882 /* ContentSizeView.storyboard in Resources */,
 				FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */,
 				825455131FFE822F003D108D /* PickerView.storyboard in Resources */,
@@ -347,6 +362,7 @@
 				820A9E19201D91D700574CF0 /* InfinityScroolViewController.swift in Sources */,
 				FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */,
 				FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */,
+				FA8591122027FABB003C3A18 /* ShowKeyboardViewController.swift in Sources */,
 				829794792000484400EF5968 /* PickerViewController.swift in Sources */,
 				FAADD2542020876A009DE882 /* ContentSizeViewController.swift in Sources */,
 				820A9E17201D91D700574CF0 /* CustomCell.swift in Sources */,

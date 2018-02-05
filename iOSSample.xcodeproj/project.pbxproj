@@ -148,13 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				FA406DD31FF4AB9F0005620B /* Common */,
-				FA406DD21FF4AB7B0005620B /* CarouselView */,
-				FA406DD61FF4ACF60005620B /* DrawRectView */,
-				FAADD2502020873F009DE882 /* ContentSize */,
-				821FA4FD1FFE7369004732FA /* CustomViewXib */,
-				820A9E10201D8EB200574CF0 /* InfinityScroolView */,
-				825455111FFE820D003D108D /* PickerView */,
-				FA85910E2027FA90003C3A18 /* ShowKeyboardView */,
+				FA9734752028077500D465CA /* Samples */,
 				FA406DD51FF4ABE20005620B /* Resources */,
 				FA149CC61FCD3ED800E82F5F /* Info.plist */,
 			);
@@ -206,6 +200,20 @@
 				FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */,
 			);
 			path = ShowKeyboardView;
+			sourceTree = "<group>";
+		};
+		FA9734752028077500D465CA /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				FA406DD21FF4AB7B0005620B /* CarouselView */,
+				FA406DD61FF4ACF60005620B /* DrawRectView */,
+				FAADD2502020873F009DE882 /* ContentSize */,
+				821FA4FD1FFE7369004732FA /* CustomViewXib */,
+				820A9E10201D8EB200574CF0 /* InfinityScroolView */,
+				825455111FFE820D003D108D /* PickerView */,
+				FA85910E2027FA90003C3A18 /* ShowKeyboardView */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 		FAADD2502020873F009DE882 /* ContentSize */ = {

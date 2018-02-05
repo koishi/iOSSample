@@ -46,7 +46,7 @@ class ShowKeyboardViewController: UIViewController {
     }
 
     @objc private func keyboardWillShow(_ notification: Notification) {
-        guard let rect = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else {
+        guard let rect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
         }
         guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval else {

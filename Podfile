@@ -7,4 +7,5 @@ target 'iOSSample' do
 
   # Pods for iOSSample
   pod 'SDWebImage', '~> 4.0'
+  pod 'GestureRecognizerClosures', '~> 4'
 end

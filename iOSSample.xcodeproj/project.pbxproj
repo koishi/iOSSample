@@ -23,6 +23,11 @@
 		FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA149CBE1FCD3ED800E82F5F /* Main.storyboard */; };
 		FA149CC21FCD3ED800E82F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA149CC11FCD3ED800E82F5F /* Assets.xcassets */; };
 		FA149CC51FCD3ED800E82F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA149CC31FCD3ED800E82F5F /* LaunchScreen.storyboard */; };
+		FA2D14D92034441F007430B9 /* AffineTransform.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2D14D82034441F007430B9 /* AffineTransform.storyboard */; };
+		FA2D14DB20344437007430B9 /* AffineTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D14DA20344437007430B9 /* AffineTransformViewController.swift */; };
+		FA2D14DD20344457007430B9 /* AffineTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D14DC20344457007430B9 /* AffineTransformView.swift */; };
+		FA328184202989C200E395AB /* ShowKeyboardScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA328182202989C200E395AB /* ShowKeyboardScrollViewController.swift */; };
+		FA328185202989C200E395AB /* ShowKeyboardScroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA328183202989C200E395AB /* ShowKeyboardScroll.storyboard */; };
 		FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */; };
 		FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406DD91FF4AD680005620B /* DrawRectViewController.swift */; };
 		FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406DDB1FF4BBDA0005620B /* Images.xcassets */; };
@@ -54,6 +59,11 @@
 		FA149CC11FCD3ED800E82F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA149CC41FCD3ED800E82F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA149CC61FCD3ED800E82F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2D14D82034441F007430B9 /* AffineTransform.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AffineTransform.storyboard; sourceTree = "<group>"; };
+		FA2D14DA20344437007430B9 /* AffineTransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffineTransformViewController.swift; sourceTree = "<group>"; };
+		FA2D14DC20344457007430B9 /* AffineTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffineTransformView.swift; sourceTree = "<group>"; };
+		FA328182202989C200E395AB /* ShowKeyboardScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowKeyboardScrollViewController.swift; sourceTree = "<group>"; };
+		FA328183202989C200E395AB /* ShowKeyboardScroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowKeyboardScroll.storyboard; sourceTree = "<group>"; };
 		FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawRectView.storyboard; sourceTree = "<group>"; };
 		FA406DD91FF4AD680005620B /* DrawRectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectViewController.swift; sourceTree = "<group>"; };
 		FA406DDB1FF4BBDA0005620B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -155,6 +165,25 @@
 			path = iOSSample;
 			sourceTree = "<group>";
 		};
+		FA2D14D72034440A007430B9 /* AffineTransform */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D14D82034441F007430B9 /* AffineTransform.storyboard */,
+				FA2D14DA20344437007430B9 /* AffineTransformViewController.swift */,
+				FA2D14DC20344457007430B9 /* AffineTransformView.swift */,
+			);
+			path = AffineTransform;
+			sourceTree = "<group>";
+		};
+		FA3281812029893D00E395AB /* ShowKeyboardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FA328183202989C200E395AB /* ShowKeyboardScroll.storyboard */,
+				FA328182202989C200E395AB /* ShowKeyboardScrollViewController.swift */,
+			);
+			path = ShowKeyboardScrollView;
+			sourceTree = "<group>";
+		};
 		FA406DD21FF4AB7B0005620B /* CarouselView */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +234,7 @@
 		FA9734752028077500D465CA /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				FA2D14D72034440A007430B9 /* AffineTransform */,
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
 				FA406DD61FF4ACF60005620B /* DrawRectView */,
 				FAADD2502020873F009DE882 /* ContentSize */,
@@ -212,6 +242,7 @@
 				820A9E10201D8EB200574CF0 /* InfinityScroolView */,
 				825455111FFE820D003D108D /* PickerView */,
 				FA85910E2027FA90003C3A18 /* ShowKeyboardView */,
+				FA3281812029893D00E395AB /* ShowKeyboardScrollView */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -300,6 +331,8 @@
 				825455131FFE822F003D108D /* PickerView.storyboard in Resources */,
 				FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */,
 				8297947B2000505000EF5968 /* PickerViewController.storyboard in Resources */,
+				FA328185202989C200E395AB /* ShowKeyboardScroll.storyboard in Resources */,
+				FA2D14D92034441F007430B9 /* AffineTransform.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +354,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		784089C70C26CB252FB14776 /* [CP] Embed Pods Frameworks */ = {
@@ -365,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C978E21FFFC10200F63ADE /* PickerViewBaseController.swift in Sources */,
+				FA328184202989C200E395AB /* ShowKeyboardScrollViewController.swift in Sources */,
 				8207BD241FF76C5100EC2FD8 /* CustomCollectionView.swift in Sources */,
 				FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */,
 				820A9E19201D91D700574CF0 /* InfinityScroolViewController.swift in Sources */,
@@ -374,6 +408,8 @@
 				829794792000484400EF5968 /* PickerViewController.swift in Sources */,
 				FAADD2542020876A009DE882 /* ContentSizeViewController.swift in Sources */,
 				820A9E17201D91D700574CF0 /* CustomCell.swift in Sources */,
+				FA2D14DB20344437007430B9 /* AffineTransformViewController.swift in Sources */,
+				FA2D14DD20344457007430B9 /* AffineTransformView.swift in Sources */,
 				FA149CBB1FCD3ED800E82F5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

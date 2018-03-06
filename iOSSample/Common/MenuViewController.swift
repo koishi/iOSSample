@@ -20,7 +20,9 @@ class MenuViewController: UIViewController {
                                                                ("ContentSizeView","ContentSizeView"),
                                                                ("ShowKeyboard","ShowKeyboard"),
                                                                ("ShowKeyboardScroll","ShowKeyboardScroll"),
-                                                               ("AffineTransform","AffineTransform")]
+                                                               ("AffineTransform","AffineTransform"),
+                                                               ("NavigationController","NavigationController")]
+
     let cellIdentifier = "cell"
 
     override func viewDidLoad() {

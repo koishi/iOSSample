@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="40f-70-yZw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="wJZ-g9-xNO">
+            <objects>
+                <viewController storyboardIdentifier="SampleViewController" id="40f-70-yZw" customClass="SampleViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7X3-g5-MMM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N4-c3-8qi">
+                                <rect key="frame" x="122.5" y="140" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bi6-Ko-3XY"/>
+                                    <constraint firstAttribute="width" constant="130" id="gdA-eV-HoF"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <action selector="tappedPushButton:" destination="40f-70-yZw" eventType="touchUpInside" id="I7d-By-h2Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nby-sL-5my">
+                                <rect key="frame" x="122" y="290" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Io4-Bw-GWh"/>
+                                    <constraint firstAttribute="width" constant="130" id="ms5-oI-JCm"/>
+                                </constraints>
+                                <state key="normal" title="Modal"/>
+                                <connections>
+                                    <action selector="tappedModalButton:" destination="40f-70-yZw" eventType="touchUpInside" id="Vc1-w8-TiA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4L-15-1mS">
+                                <rect key="frame" x="122" y="440" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="JvW-pq-3Xp"/>
+                                    <constraint firstAttribute="height" constant="30" id="aiK-Kw-SPX"/>
+                                </constraints>
+                                <state key="normal" title="Root"/>
+                                <connections>
+                                    <action selector="tappedRootButton:" destination="40f-70-yZw" eventType="touchUpInside" id="qmW-y4-rEz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7N4-c3-8qi" firstAttribute="centerX" secondItem="7X3-g5-MMM" secondAttribute="centerX" id="QUz-wy-0jg"/>
+                            <constraint firstItem="nby-sL-5my" firstAttribute="top" secondItem="7N4-c3-8qi" secondAttribute="bottom" constant="120" id="Qsd-oy-PMi"/>
+                            <constraint firstItem="L4L-15-1mS" firstAttribute="centerX" secondItem="7X3-g5-MMM" secondAttribute="centerX" id="ZQM-kL-z1a"/>
+                            <constraint firstItem="7N4-c3-8qi" firstAttribute="top" secondItem="kYQ-XM-RJ5" secondAttribute="top" constant="120" id="ijW-dj-5O6"/>
+                            <constraint firstItem="nby-sL-5my" firstAttribute="centerX" secondItem="7X3-g5-MMM" secondAttribute="centerX" id="pIB-3H-DUm"/>
+                            <constraint firstItem="L4L-15-1mS" firstAttribute="top" secondItem="nby-sL-5my" secondAttribute="bottom" constant="120" id="qZW-0T-Uzo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kYQ-XM-RJ5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AZi-tf-F1K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTD-Oi-rZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="-55.322338830584712"/>
+        </scene>
+        <!--Sample Modal View Controller-->
+        <scene sceneID="NFM-Y8-YJj">
+            <objects>
+                <viewController storyboardIdentifier="SampleModalViewController" id="FJc-Pz-xVy" customClass="SampleModalViewController" customModule="iOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NwM-qb-KRi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJZ-vf-1PC">
+                                <rect key="frame" x="122.5" y="140" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Tv-JC-JIj"/>
+                                    <constraint firstAttribute="width" constant="130" id="BUq-me-Foa"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <action selector="tappedPushButton:" destination="FJc-Pz-xVy" eventType="touchUpInside" id="P21-Sn-IIN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUm-Q0-fQd">
+                                <rect key="frame" x="122" y="290" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MiE-Jw-0gY"/>
+                                    <constraint firstAttribute="width" constant="130" id="QHi-mc-cDI"/>
+                                </constraints>
+                                <state key="normal" title="Modal"/>
+                                <connections>
+                                    <action selector="tappedModalButton:" destination="FJc-Pz-xVy" eventType="touchUpInside" id="Ijf-2D-bMl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIL-Dx-o7t">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2qx-z8-qWQ"/>
+                                    <constraint firstAttribute="width" constant="46" id="ePc-9Y-nft"/>
+                                </constraints>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="tappedCloseButton:" destination="FJc-Pz-xVy" eventType="touchUpInside" id="1hp-hu-lAY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKb-Lw-kav">
+                                <rect key="frame" x="122.5" y="440" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YVF-UZ-r1b"/>
+                                    <constraint firstAttribute="width" constant="130" id="ejW-f6-y9Z"/>
+                                </constraints>
+                                <state key="normal" title="Root"/>
+                                <connections>
+                                    <action selector="tappedRootButton:" destination="FJc-Pz-xVy" eventType="touchUpInside" id="hjT-NA-nPg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jUm-Q0-fQd" firstAttribute="top" secondItem="QJZ-vf-1PC" secondAttribute="bottom" constant="120" id="01F-Hb-qXl"/>
+                            <constraint firstItem="vKb-Lw-kav" firstAttribute="centerX" secondItem="NwM-qb-KRi" secondAttribute="centerX" id="31m-VE-YIi"/>
+                            <constraint firstItem="WIL-Dx-o7t" firstAttribute="top" secondItem="Aoa-Nd-HGd" secondAttribute="top" id="ij9-fY-X7I"/>
+                            <constraint firstItem="QJZ-vf-1PC" firstAttribute="centerX" secondItem="NwM-qb-KRi" secondAttribute="centerX" id="mc6-Zw-J9T"/>
+                            <constraint firstItem="WIL-Dx-o7t" firstAttribute="leading" secondItem="Aoa-Nd-HGd" secondAttribute="leading" constant="16" id="skH-AA-hWl"/>
+                            <constraint firstItem="jUm-Q0-fQd" firstAttribute="centerX" secondItem="NwM-qb-KRi" secondAttribute="centerX" id="z6n-GU-8qR"/>
+                            <constraint firstItem="vKb-Lw-kav" firstAttribute="top" secondItem="jUm-Q0-fQd" secondAttribute="bottom" constant="120" id="zJ5-gp-UG0"/>
+                            <constraint firstItem="QJZ-vf-1PC" firstAttribute="top" secondItem="Aoa-Nd-HGd" secondAttribute="top" constant="120" id="zYe-en-pDV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aoa-Nd-HGd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b5B-zE-yhO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pff-eV-Nz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-55"/>
+        </scene>
+    </scenes>
+</document>

@@ -33,10 +33,13 @@
 		FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406DDB1FF4BBDA0005620B /* Images.xcassets */; };
 		FA8591102027FAB2003C3A18 /* ShowKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */; };
 		FA8591122027FABB003C3A18 /* ShowKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */; };
+		FA8EA31E204CEA93009E7D7C /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8EA31D204CEA93009E7D7C /* NavigationController.storyboard */; };
+		FA8EA320204CF2EE009E7D7C /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA31F204CF2EE009E7D7C /* SampleViewController.swift */; };
 		FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */; };
 		FA964F471FD53AA3001FCB7E /* CarouselView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */; };
 		FAADD25220208754009DE882 /* ContentSizeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAADD25120208754009DE882 /* ContentSizeView.storyboard */; };
 		FAADD2542020876A009DE882 /* ContentSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADD2532020876A009DE882 /* ContentSizeViewController.swift */; };
+		FACFBA83204D28D900BA0B77 /* SampleModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFBA82204D28D900BA0B77 /* SampleModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,10 +72,13 @@
 		FA406DDB1FF4BBDA0005620B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowKeyboard.storyboard; sourceTree = "<group>"; };
 		FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKeyboardViewController.swift; sourceTree = "<group>"; };
+		FA8EA31D204CEA93009E7D7C /* NavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationController.storyboard; sourceTree = "<group>"; };
+		FA8EA31F204CF2EE009E7D7C /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		FA964F441FD53A8B001FCB7E /* CarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		FA964F461FD53AA3001FCB7E /* CarouselView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarouselView.storyboard; sourceTree = "<group>"; };
 		FAADD25120208754009DE882 /* ContentSizeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentSizeView.storyboard; sourceTree = "<group>"; };
 		FAADD2532020876A009DE882 /* ContentSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizeViewController.swift; sourceTree = "<group>"; };
+		FACFBA82204D28D900BA0B77 /* SampleModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModalViewController.swift; sourceTree = "<group>"; };
 		FF673239809A6BE3D4FB6E51 /* Pods-iOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSSample/Pods-iOSSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,9 +237,20 @@
 			path = ShowKeyboardView;
 			sourceTree = "<group>";
 		};
+		FA8EA31C204CEA69009E7D7C /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EA31D204CEA93009E7D7C /* NavigationController.storyboard */,
+				FA8EA31F204CF2EE009E7D7C /* SampleViewController.swift */,
+				FACFBA82204D28D900BA0B77 /* SampleModalViewController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		FA9734752028077500D465CA /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				FA8EA31C204CEA69009E7D7C /* NavigationController */,
 				FA2D14D72034440A007430B9 /* AffineTransform */,
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
 				FA406DD61FF4ACF60005620B /* DrawRectView */,
@@ -328,6 +345,7 @@
 				FA8591102027FAB2003C3A18 /* ShowKeyboard.storyboard in Resources */,
 				FAADD25220208754009DE882 /* ContentSizeView.storyboard in Resources */,
 				FA149CC01FCD3ED800E82F5F /* Main.storyboard in Resources */,
+				FA8EA31E204CEA93009E7D7C /* NavigationController.storyboard in Resources */,
 				825455131FFE822F003D108D /* PickerView.storyboard in Resources */,
 				FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */,
 				8297947B2000505000EF5968 /* PickerViewController.storyboard in Resources */,
@@ -402,8 +420,10 @@
 				8207BD241FF76C5100EC2FD8 /* CustomCollectionView.swift in Sources */,
 				FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */,
 				820A9E19201D91D700574CF0 /* InfinityScroolViewController.swift in Sources */,
+				FA8EA320204CF2EE009E7D7C /* SampleViewController.swift in Sources */,
 				FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */,
 				FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */,
+				FACFBA83204D28D900BA0B77 /* SampleModalViewController.swift in Sources */,
 				FA8591122027FABB003C3A18 /* ShowKeyboardViewController.swift in Sources */,
 				829794792000484400EF5968 /* PickerViewController.swift in Sources */,
 				FAADD2542020876A009DE882 /* ContentSizeViewController.swift in Sources */,

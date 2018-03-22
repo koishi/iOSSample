@@ -31,6 +31,8 @@
 		FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */; };
 		FA406DDA1FF4AD680005620B /* DrawRectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406DD91FF4AD680005620B /* DrawRectViewController.swift */; };
 		FA406DDC1FF4BBDA0005620B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406DDB1FF4BBDA0005620B /* Images.xcassets */; };
+		FA708E27206107BE00D697DA /* AnimationViewButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA708E26206107BE00D697DA /* AnimationViewButton.storyboard */; };
+		FA708E29206107CF00D697DA /* AnimationViewButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA708E28206107CF00D697DA /* AnimationViewButtonViewController.swift */; };
 		FA8591102027FAB2003C3A18 /* ShowKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */; };
 		FA8591122027FABB003C3A18 /* ShowKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */; };
 		FA8EA31E204CEA93009E7D7C /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8EA31D204CEA93009E7D7C /* NavigationController.storyboard */; };
@@ -70,6 +72,8 @@
 		FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrawRectView.storyboard; sourceTree = "<group>"; };
 		FA406DD91FF4AD680005620B /* DrawRectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectViewController.swift; sourceTree = "<group>"; };
 		FA406DDB1FF4BBDA0005620B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA708E26206107BE00D697DA /* AnimationViewButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimationViewButton.storyboard; sourceTree = "<group>"; };
+		FA708E28206107CF00D697DA /* AnimationViewButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewButtonViewController.swift; sourceTree = "<group>"; };
 		FA85910F2027FAB2003C3A18 /* ShowKeyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowKeyboard.storyboard; sourceTree = "<group>"; };
 		FA8591112027FABB003C3A18 /* ShowKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKeyboardViewController.swift; sourceTree = "<group>"; };
 		FA8EA31D204CEA93009E7D7C /* NavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationController.storyboard; sourceTree = "<group>"; };
@@ -228,6 +232,15 @@
 			path = DrawRectView;
 			sourceTree = "<group>";
 		};
+		FA708E25206107B400D697DA /* AnimationViewButton */ = {
+			isa = PBXGroup;
+			children = (
+				FA708E26206107BE00D697DA /* AnimationViewButton.storyboard */,
+				FA708E28206107CF00D697DA /* AnimationViewButtonViewController.swift */,
+			);
+			path = AnimationViewButton;
+			sourceTree = "<group>";
+		};
 		FA85910E2027FA90003C3A18 /* ShowKeyboardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +263,7 @@
 		FA9734752028077500D465CA /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				FA708E25206107B400D697DA /* AnimationViewButton */,
 				FA8EA31C204CEA69009E7D7C /* NavigationController */,
 				FA2D14D72034440A007430B9 /* AffineTransform */,
 				FA406DD21FF4AB7B0005620B /* CarouselView */,
@@ -348,6 +362,7 @@
 				FA8EA31E204CEA93009E7D7C /* NavigationController.storyboard in Resources */,
 				825455131FFE822F003D108D /* PickerView.storyboard in Resources */,
 				FA406DD81FF4AD1D0005620B /* DrawRectView.storyboard in Resources */,
+				FA708E27206107BE00D697DA /* AnimationViewButton.storyboard in Resources */,
 				8297947B2000505000EF5968 /* PickerViewController.storyboard in Resources */,
 				FA328185202989C200E395AB /* ShowKeyboardScroll.storyboard in Resources */,
 				FA2D14D92034441F007430B9 /* AffineTransform.storyboard in Resources */,
@@ -419,6 +434,7 @@
 				FA328184202989C200E395AB /* ShowKeyboardScrollViewController.swift in Sources */,
 				8207BD241FF76C5100EC2FD8 /* CustomCollectionView.swift in Sources */,
 				FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */,
+				FA708E29206107CF00D697DA /* AnimationViewButtonViewController.swift in Sources */,
 				820A9E19201D91D700574CF0 /* InfinityScroolViewController.swift in Sources */,
 				FA8EA320204CF2EE009E7D7C /* SampleViewController.swift in Sources */,
 				FA964F451FD53A8B001FCB7E /* CarouselViewController.swift in Sources */,

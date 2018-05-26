@@ -22,7 +22,8 @@ class MenuViewController: UIViewController {
                                                                ("ShowKeyboardScroll","ShowKeyboardScroll"),
                                                                ("AffineTransform","AffineTransform"),
                                                                ("NavigationController","NavigationController"),
-                                                               ("AnimationViewButton","AnimationViewButton")]
+                                                               ("AnimationViewButton","AnimationViewButton"),
+                                                               ("ScrollViewController","ScrollView")]
 
     let cellIdentifier = "cell"
 

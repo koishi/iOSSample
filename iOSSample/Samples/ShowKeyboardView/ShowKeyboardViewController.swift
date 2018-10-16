@@ -10,6 +10,8 @@ import UIKit
 
 class ShowKeyboardViewController: UIViewController {
 
+    private var bottomSafeAreaPadding: CGFloat = 0
+
     @IBOutlet weak var textField: UITextField! {
         didSet {
             textField.delegate = self
@@ -19,6 +21,13 @@ class ShowKeyboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addNotificationObservers()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        if #available(iOS 11.0, *) {
+            guard let window = UIApplication.shared.keyWindow else { return }
+            bottomSafeAreaPadding = window.safeAreaInsets.bottom
+        }
     }
 
     deinit {
@@ -46,14 +55,10 @@ class ShowKeyboardViewController: UIViewController {
     }
 
     @objc private func keyboardWillShow(_ notification: Notification) {
-        guard let rect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-            return
-        }
-        guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval else {
-            return
-        }
+        guard let rect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
         UIView.animate(withDuration: duration, animations: {
-            let transform = CGAffineTransform(translationX: 0, y: -rect.size.height)
+            let transform = CGAffineTransform(translationX: 0, y: -rect.size.height + self.bottomSafeAreaPadding)
             self.view.transform = transform
         })
     }

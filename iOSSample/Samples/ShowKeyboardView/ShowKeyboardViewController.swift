@@ -44,19 +44,19 @@ class ShowKeyboardViewController: UIViewController {
 
     private final func observeKeyboardNotifications() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(ShowKeyboardViewController.keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(ShowKeyboardViewController.keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(ShowKeyboardViewController.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(ShowKeyboardViewController.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     private final func unobserveKeyboardNotifications() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-        notificationCenter.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        notificationCenter.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     @objc private func keyboardWillShow(_ notification: Notification) {
-        guard let rect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
-        guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
+        guard let rect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        guard let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
         UIView.animate(withDuration: duration, animations: {
             let transform = CGAffineTransform(translationX: 0, y: -rect.size.height + self.bottomSafeAreaPadding)
             self.view.transform = transform
@@ -64,7 +64,7 @@ class ShowKeyboardViewController: UIViewController {
     }
 
     @objc private func keyboardWillHide(_ notification: Notification) {
-        guard let duration = notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval else {
+        guard let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
             return
         }
         UIView.animate(withDuration: duration, animations: {

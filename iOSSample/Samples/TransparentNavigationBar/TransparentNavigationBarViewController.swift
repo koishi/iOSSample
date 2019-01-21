@@ -74,11 +74,11 @@ class TransparentNavigationBarViewController: UIViewController {
 }
 
 extension UINavigationController {
-    override open var childViewControllerForStatusBarStyle: UIViewController? {
+    override open var childForStatusBarStyle: UIViewController? {
         return visibleViewController
     }
 
-    override open var childViewControllerForStatusBarHidden: UIViewController? {
+    override open var childForStatusBarHidden: UIViewController? {
         return visibleViewController
     }
 }

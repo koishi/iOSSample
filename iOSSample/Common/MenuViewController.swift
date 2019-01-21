@@ -23,7 +23,8 @@ class MenuViewController: UIViewController {
                                                                ("AffineTransform","AffineTransform"),
                                                                ("NavigationController","NavigationController"),
                                                                ("AnimationViewButton","AnimationViewButton"),
-                                                               ("ScrollViewController","ScrollView")]
+                                                               ("ScrollViewController","ScrollView"),
+                                                               ("TransparentNavigationBar","TransparentNavigationBar"),]
 
     let cellIdentifier = "cell"
 

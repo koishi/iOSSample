@@ -85,24 +85,3 @@ class LayerRoundedCornersView: UIView {
         maskLayer.borderWidth = 2.0
     }
 }
-
-class RoundedRectView: UIView {
-
-    override func draw(_ rect: CGRect) {
-        let h = bounds.size.height
-        let r = h * 0.5
-        drawRoundRect(rect: rect, radius: r, color: UIColor.red)
-    }
-
-    private func drawRoundRect(rect: CGRect, radius: CGFloat, color: UIColor) {
-        guard let context = UIGraphicsGetCurrentContext() else { return }
-        context.setFillColor(color.cgColor)
-        context.move(to: CGPoint(x: rect.minX, y: rect.midY))
-        context.addArc(tangent1End: CGPoint(x: rect.minX, y: rect.minY), tangent2End: CGPoint(x: rect.midX, y: rect.minY), radius: radius)
-        context.addArc(tangent1End: CGPoint(x: rect.maxX, y: rect.minY), tangent2End: CGPoint(x: rect.maxX, y: rect.midY), radius: radius)
-        context.addArc(tangent1End: CGPoint(x: rect.maxX, y: rect.maxY), tangent2End: CGPoint(x: rect.midX, y: rect.maxY), radius: radius)
-        context.addArc(tangent1End: CGPoint(x: rect.minX, y: rect.maxY), tangent2End: CGPoint(x: rect.minX, y: rect.midY), radius: radius)
-        context.closePath()
-        context.fillPath()
-    }
-}

@@ -15,6 +15,7 @@
 		820A9E19201D91D700574CF0 /* InfinityScroolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A9E16201D91D600574CF0 /* InfinityScroolViewController.swift */; };
 		821FA4FF1FFE7399004732FA /* CustomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821FA4FE1FFE7399004732FA /* CustomViewController.storyboard */; };
 		825455131FFE822F003D108D /* PickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825455121FFE822F003D108D /* PickerView.storyboard */; };
+		828C456B2267E9DE00E3AF4E /* RoundedRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C456A2267E9DE00E3AF4E /* RoundedRectView.swift */; };
 		829794792000484400EF5968 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829794782000484400EF5968 /* PickerViewController.swift */; };
 		8297947B2000505000EF5968 /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8297947A2000505000EF5968 /* PickerViewController.storyboard */; };
 		82C58BA420B97C5300022D43 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C58BA320B97C5300022D43 /* ScrollView.storyboard */; };
@@ -58,6 +59,7 @@
 		820A9E16201D91D600574CF0 /* InfinityScroolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinityScroolViewController.swift; sourceTree = "<group>"; };
 		821FA4FE1FFE7399004732FA /* CustomViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomViewController.storyboard; sourceTree = "<group>"; };
 		825455121FFE822F003D108D /* PickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerView.storyboard; sourceTree = "<group>"; };
+		828C456A2267E9DE00E3AF4E /* RoundedRectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectView.swift; sourceTree = "<group>"; };
 		829794782000484400EF5968 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		8297947A2000505000EF5968 /* PickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
 		82C58BA320B97C5300022D43 /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			children = (
 				FA406DD71FF4AD1D0005620B /* DrawRectView.storyboard */,
 				FA406DD91FF4AD680005620B /* DrawRectViewController.swift */,
+				828C456A2267E9DE00E3AF4E /* RoundedRectView.swift */,
 			);
 			path = DrawRectView;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				82C978E21FFFC10200F63ADE /* PickerViewBaseController.swift in Sources */,
 				FA328184202989C200E395AB /* ShowKeyboardScrollViewController.swift in Sources */,
 				8207BD241FF76C5100EC2FD8 /* CustomCollectionView.swift in Sources */,
+				828C456B2267E9DE00E3AF4E /* RoundedRectView.swift in Sources */,
 				FA149CBD1FCD3ED800E82F5F /* MenuViewController.swift in Sources */,
 				FA708E29206107CF00D697DA /* AnimationViewButtonViewController.swift in Sources */,
 				820A9E19201D91D700574CF0 /* InfinityScroolViewController.swift in Sources */,
